@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FLoginB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,5 +26,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Корзина-->
+        <scene sceneID="UPJ-2y-bWd">
+            <objects>
+                <viewController title="Корзина" id="1dn-S0-bKF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bpg-8x-Eie"/>
+                        <viewControllerLayoutGuide type="bottom" id="cJz-m5-FVF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nvO-m5-JQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="Basket" id="vBX-TO-xnJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEd-aS-nY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="451"/>
+        </scene>
+        <!--Книги-->
+        <scene sceneID="bHh-wv-0v1">
+            <objects>
+                <viewController title="Книги" id="h1O-qx-SPX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vmu-F6-DLN"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfA-zt-1Vb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JVp-bb-PUd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Книги" image="Book" id="5BG-mp-H95"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnW-Bx-B8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="-205"/>
+        </scene>
+        <!--Аккаунт-->
+        <scene sceneID="bV0-Sz-Qkt">
+            <objects>
+                <viewController title="Аккаунт" id="aOF-VT-Vd6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l3z-ZV-fQc"/>
+                        <viewControllerLayoutGuide type="bottom" id="laB-ox-1sQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nQB-a3-UmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Аккаунт" image="Account" id="fBM-9H-V6v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgq-PF-Gpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2588" y="85"/>
+        </scene>
+        <!--Tab Bar-->
+        <scene sceneID="0Ld-bJ-uXu">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" id="qcM-N1-xen" customClass="TabBar" customModule="FLoginB" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="c3v-Mo-QFk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h1O-qx-SPX" kind="relationship" relationship="viewControllers" id="YbR-W0-yab"/>
+                        <segue destination="1dn-S0-bKF" kind="relationship" relationship="viewControllers" id="LXk-5c-0bY"/>
+                        <segue destination="aOF-VT-Vd6" kind="relationship" relationship="viewControllers" id="xum-tv-VmC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSq-Pr-eUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="124"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Account" width="24" height="24"/>
+        <image name="Basket" width="24" height="24"/>
+        <image name="Book" width="24" height="24"/>
+    </resources>
 </document>

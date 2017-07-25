@@ -12,9 +12,15 @@
 		7F13033F1F27225E00A1B9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13033D1F27225E00A1B9C2 /* Main.storyboard */; };
 		7F1303411F27225E00A1B9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1303401F27225E00A1B9C2 /* Assets.xcassets */; };
 		7F1303441F27225E00A1B9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1303421F27225E00A1B9C2 /* LaunchScreen.storyboard */; };
+		7F13034C1F2728F800A1B9C2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13034B1F2728F800A1B9C2 /* FBSDKLoginKit.framework */; };
+		7F13034F1F27425E00A1B9C2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13034E1F27425E00A1B9C2 /* FBSDKLoginKit.framework */; };
+		7F1303551F276F3D00A1B9C2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1303541F276F3C00A1B9C2 /* TabBar.swift */; };
+		E4F2110B53874597536674A1 /* Pods_FLoginB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB78391304D5C6AB5DB5A920 /* Pods_FLoginB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		104043FFB4D8FC82AD2CEEB5 /* Pods-FLoginB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLoginB.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLoginB/Pods-FLoginB.release.xcconfig"; sourceTree = "<group>"; };
+		67ADC873A3F0B4002B75BFF8 /* Pods-FLoginB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLoginB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLoginB/Pods-FLoginB.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1303361F27225E00A1B9C2 /* FLoginB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLoginB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1303391F27225E00A1B9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F13033B1F27225E00A1B9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		7F1303401F27225E00A1B9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1303431F27225E00A1B9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1303451F27225E00A1B9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F13034B1F2728F800A1B9C2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.24.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		7F13034D1F27331500A1B9C2 /* FLoginB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLoginB.entitlements; sourceTree = "<group>"; };
+		7F13034E1F27425E00A1B9C2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.24.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		7F1303501F2746BD00A1B9C2 /* FLoginB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FLoginB-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F1303541F276F3C00A1B9C2 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		AB78391304D5C6AB5DB5A920 /* Pods_FLoginB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLoginB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F13034C1F2728F800A1B9C2 /* FBSDKLoginKit.framework in Frameworks */,
+				E4F2110B53874597536674A1 /* Pods_FLoginB.framework in Frameworks */,
+				7F13034F1F27425E00A1B9C2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6409E077423C42B370C65457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67ADC873A3F0B4002B75BFF8 /* Pods-FLoginB.debug.xcconfig */,
+				104043FFB4D8FC82AD2CEEB5 /* Pods-FLoginB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6865F1601149FCA27345F0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F13034E1F27425E00A1B9C2 /* FBSDKLoginKit.framework */,
+				7F13034B1F2728F800A1B9C2 /* FBSDKLoginKit.framework */,
+				AB78391304D5C6AB5DB5A920 /* Pods_FLoginB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F13032D1F27225E00A1B9C2 = {
 			isa = PBXGroup;
 			children = (
 				7F1303381F27225E00A1B9C2 /* FLoginB */,
 				7F1303371F27225E00A1B9C2 /* Products */,
+				6409E077423C42B370C65457 /* Pods */,
+				6865F1601149FCA27345F0FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +90,15 @@
 		7F1303381F27225E00A1B9C2 /* FLoginB */ = {
 			isa = PBXGroup;
 			children = (
+				7F13034D1F27331500A1B9C2 /* FLoginB.entitlements */,
 				7F1303391F27225E00A1B9C2 /* AppDelegate.swift */,
+				7F1303541F276F3C00A1B9C2 /* TabBar.swift */,
 				7F13033B1F27225E00A1B9C2 /* ViewController.swift */,
 				7F13033D1F27225E00A1B9C2 /* Main.storyboard */,
 				7F1303401F27225E00A1B9C2 /* Assets.xcassets */,
 				7F1303421F27225E00A1B9C2 /* LaunchScreen.storyboard */,
 				7F1303451F27225E00A1B9C2 /* Info.plist */,
+				7F1303501F2746BD00A1B9C2 /* FLoginB-Bridging-Header.h */,
 			);
 			path = FLoginB;
 			sourceTree = "<group>";
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F1303481F27225E00A1B9C2 /* Build configuration list for PBXNativeTarget "FLoginB" */;
 			buildPhases = (
+				3A85BEE0B8025A556FE75052 /* [CP] Check Pods Manifest.lock */,
 				7F1303321F27225E00A1B9C2 /* Sources */,
 				7F1303331F27225E00A1B9C2 /* Frameworks */,
 				7F1303341F27225E00A1B9C2 /* Resources */,
+				EFAE73FE1038B2C45DC8EC8C /* [CP] Embed Pods Frameworks */,
+				0DB54B9575CFC7BB805E702C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,7 +139,13 @@
 					7F1303351F27225E00A1B9C2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = DFT9FL7J65;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,11 +180,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DB54B9575CFC7BB805E702C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLoginB/Pods-FLoginB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A85BEE0B8025A556FE75052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAE73FE1038B2C45DC8EC8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLoginB/Pods-FLoginB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F1303321F27225E00A1B9C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1303551F276F3D00A1B9C2 /* TabBar.swift in Sources */,
 				7F13033C1F27225E00A1B9C2 /* ViewController.swift in Sources */,
 				7F13033A1F27225E00A1B9C2 /* AppDelegate.swift in Sources */,
 			);
@@ -261,26 +358,35 @@
 		};
 		7F1303491F27225E00A1B9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67ADC873A3F0B4002B75BFF8 /* Pods-FLoginB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FLoginB/FLoginB.entitlements;
 				DEVELOPMENT_TEAM = DFT9FL7J65;
 				INFOPLIST_FILE = FLoginB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alex.FLoginB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FLoginB/FLoginB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7F13034A1F27225E00A1B9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104043FFB4D8FC82AD2CEEB5 /* Pods-FLoginB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FLoginB/FLoginB.entitlements;
 				DEVELOPMENT_TEAM = DFT9FL7J65;
 				INFOPLIST_FILE = FLoginB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alex.FLoginB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FLoginB/FLoginB-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +410,7 @@
 				7F13034A1F27225E00A1B9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
